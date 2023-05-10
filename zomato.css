@@ -5,7 +5,7 @@
 
 body {
     font-family: 'Merriweather', serif;
-    background-color: #f9fafc;
+    background-color: #ebf2ff;
 
 }
 
@@ -29,7 +29,8 @@ body {
         to right,
         #ff512f 0%, #dd2476 51%, #ff512f 100%
     );
-
+    
+    font-weight: bolder;
     color: white;
     padding: 12px;
     border: none;
@@ -41,14 +42,116 @@ body {
     cursor: pointer
 }
 
+.container {
+    max-width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.hero__image__container {
+    width: 100%;
+}
+
+.hero__image{
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
+}
+
+
+.hero__text {
+    font-weight: 800;
+    font-size: 30px;
+    margin: 20px 0;
+    color: #1d3557;
+}
+
+
+
+.food__text {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    color: #1d3557;
+}
+
+.food__card__image {
+    width: 100%;
+}
+
+.food__image {
+    width: 100%;
+    border-radius: 6px 6px 0 0;
+}
+
+.food__card__container {
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.food__card__desription {
+    padding: 15px;
+}
+
 @media (min-width: 768px) {
     .navbar {
         justify-content: space-between;
         padding: 10px 30px;
     }
+    
+    .hero__container {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    
+    .food__lists {
+        display: flex;
+        gap: 15px;
+        margin: 20px;
+    }
+
+    #pizza__card {
+        margin-top: -20px;
+        margin-bottom: 50px;
+    }
+
+    .food__text {
+        
+        padding-bottom: 30px;
+        font-size: 50px;
+    }
+
+    .food__card__desription {
+        padding-bottom: 0px;
+    }
+
+    .food__container {
+        position: relative;
+    }
+    
+    .food_grad {
+        position: absolute; 
+        top: 0;
+        left: 0;  
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(
+        to right,
+        #ff512f 0%, #dd2476 51%, #ff512f 100%
+    );
+    z-index: -3;
+    transform: skewY(-5deg);
+    }
 }
 
 @media (min-width: 1024px) {
+    .container {
+        max-width: 70%;
+    }
     .navbar_nav__brand {
         width: 120px;
     }
@@ -59,4 +162,21 @@ body {
         font-weight: 600;
 
     }
+
+    .hero__description {
+        width: 100%;
+        padding-right: 20px;
+      }
+   
+    .hero__text {
+        font-size: 50px;
+      }
+
+      .food__lists {
+        display: flex;
+        gap: 20px;
+    }
+    
+
+    
 }
